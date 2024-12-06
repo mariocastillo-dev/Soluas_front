@@ -1,3 +1,5 @@
+import { Navigate } from "react-router-dom";
+import { useAuth } from "../auth/AuthProvider";
 import { useState } from "react";
 import DefaultLayout from "../layout/DefaultLayout"
 
@@ -9,6 +11,14 @@ export default function Signup() {
     // const [email, setEmail] = useState("")
     const [userName, setUserName] = useState("")
     const [password, setPassword] = useState("")
+
+
+    // El usuario debe logearse para ingresar al dashboard
+      const auth = useAuth();
+      if(auth.isAuthenticated){
+          return <Navigate to="/dashboard"/>
+      }
+
     return (
         <DefaultLayout>
             <form className="form">

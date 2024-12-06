@@ -1,9 +1,18 @@
+import { Navigate } from "react-router-dom";
+import { useAuth } from "../auth/AuthProvider";
 import DefaultLayout from "../layout/DefaultLayout"
 import { useState } from "react";
 
 export default function Login() {
     const [userName, setUserName] = useState("")
     const [password, setPassword] = useState("")
+
+    // Si el usuario ya está autenticado, entonces redirigirlo al dashboard
+    const auth = useAuth();
+    if(auth.isAuthenticated){
+        return <Navigate to="/dashboard"/>
+    }
+
     return (
         <DefaultLayout>
             <form className="form">
