@@ -21,7 +21,7 @@ const AuthContext = createContext({
 
 // children -> Componente para manejar el tema de autenticación en nuestras rutas 
 export function AuthProvider({ children }: AuthProviderProps) {
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [isAuthenticated, setIsAuthenticated] = useState(true);
 
     return (
         <AuthContext.Provider value={{ isAuthenticated }}>

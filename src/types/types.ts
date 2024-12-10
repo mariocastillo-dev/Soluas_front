@@ -16,6 +16,5 @@ export interface User {
     _id: string;
     name: string;
     username: string;
-
-    //Por temas de seguridad no va,os a guardar el password del cliente
+    //Por temas de seguridad no vamos a guardar el password del cliente
 }
