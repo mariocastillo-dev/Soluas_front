@@ -30,6 +30,8 @@ interface Props {
 }
 
 export const ComboBarLineChart: React.FC<Props> = ({ data }) => {
+    console.log("datos " , data);
+    
     const chartComboData = {
         labels: data.map(item => item.mes),
         datasets: [

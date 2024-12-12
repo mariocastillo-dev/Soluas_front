@@ -9,10 +9,3 @@ export interface DoughnutChartData {
     values: number[];
 }
 
-export interface TableData {
-    id: number;
-    mes: string;
-    presupuesto: number;
-    gasto: number;
-    porcentajeEjec: number;
-}
