@@ -1,11 +1,11 @@
-import { Children } from "react";
+// import { Children } from "react";
 import { Link } from "react-router-dom";
 
 interface DefaultLayoutProps {
     children: React.ReactNode;
 }
 
-export default function DefaultLayout({children}: DefaultLayoutProps) {
+export default function DefaultLayout({ children }: DefaultLayoutProps) {
     return (
         <>
             <header>

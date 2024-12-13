@@ -3,9 +3,16 @@
 import { LogOut } from 'lucide-react';
 import { FilterSection } from './FilterSection';
 // import { UserProfile } from "./Sidebar/UserProfile";
+import type { Filters } from '../types/financialData';
 
 
-export function Sidebar() {
+interface SidebarProps {
+    filters: Filters;
+    onFiltersChange: (filters: Filters) => void;
+}
+
+
+export function Sidebar({ filters, onFiltersChange }: SidebarProps) {
     const years = ['2024', '2023', '2022'];
     const months = [
         'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
@@ -15,7 +22,7 @@ export function Sidebar() {
 
     const handleLogout = () => {
         // ACÁ HAY QUE AÑADIR LA LÓGICA DEL LOG OUT
-        console.log('Logging out...');
+        console.log('Saliendo...');
     };
 
     return (
@@ -36,9 +43,32 @@ export function Sidebar() {
                     <h3 className="font-semibold">Filtros</h3>
                 </div> */}
 
-                <FilterSection title="Año" options={years} type="dropdown" />
+                {/* <FilterSection title="Año" options={years} type="dropdown" />
                 <FilterSection title="Mes" options={months} type="multiselect" />
-                <FilterSection title="Categoría" options={categories} type="multiselect" />
+                <FilterSection title="Categoría" options={categories} type="multiselect" /> */}
+
+                <FilterSection
+                    title="Año"
+                    options={years}
+                    type="dropdown"
+                    value={filters.year}
+                    onChange={(year) => onFiltersChange({ ...filters, year })}
+                />
+                <FilterSection
+                    title="Mes"
+                    options={months}
+                    type="multiselect"
+                    value={filters.months}
+                    onChange={(months) => onFiltersChange({ ...filters, months })}
+                />
+                <FilterSection
+                    title="Categoría"
+                    options={categories}
+                    type="multiselect"
+                    value={filters.categories}
+                    onChange={(categories) => onFiltersChange({ ...filters, categories })}
+                />
+
             </div>
 
             {/* Logout Button */}

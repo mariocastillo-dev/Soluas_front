@@ -1,27 +1,30 @@
-import { SummaryCard } from './SummaryCards';
-import { monthlyData } from '../data/monthlyData';
+import { SummaryCard } from './SummaryCard';
+import { useFinancialData } from '../hooks/useFinancialData';
 import { formatCurrency, formatPercentage } from '../utils/formatters';
+import type { Filters } from '../types/financialData';
 
-export function FinancialSummary() {
-  const totalBudget = monthlyData.reduce((sum, month) => sum + month.budget, 0);
-  const totalSpent = monthlyData.reduce((sum, month) => sum + month.spent, 0);
-  const averageExpensePercentage = totalSpent / totalBudget;
+interface FinancialSummaryProps {
+  filters: Filters;
+}
+
+export function FinancialSummary({ filters }: FinancialSummaryProps) {
+  const { totals } = useFinancialData(filters);
 
   return (
     <>
       <SummaryCard
-        title="Presupuesto Total"
-        value={formatCurrency(totalBudget)}
+        title="Ganancias Totales"
+        value={formatCurrency(totals.budget)}
         icon="budget"
       />
       <SummaryCard
-        title="Gastos Totales"
-        value={formatCurrency(totalSpent)}
+        title="Costos Totales"
+        value={formatCurrency(totals.spent)}
         icon="spent"
       />
       <SummaryCard
         title="Porcentaje Promedio"
-        value={formatPercentage(averageExpensePercentage)}
+        value={formatPercentage(totals.executionPercentage)}
         icon="executionPercentage"
       />
     </>

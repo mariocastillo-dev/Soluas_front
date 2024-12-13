@@ -4,3 +4,9 @@ export interface FinancialData {
     spent: number;
     executionPercentage: number;
 }
+
+export interface Filters {
+    year: string;
+    months: string[];
+    categories: string[];
+  }

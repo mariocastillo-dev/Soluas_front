@@ -38,6 +38,20 @@ export const DoughnutChart: React.FC<Props> = ({ data, title }) => {
     };
 
     const options = {
+        // cutout: 15,
+        // radius: 40,
+        // circumference: 360,
+        aspectRatio: 0.8,
+
+        // scales: {
+        //     y: {
+        //         suggestedMin: 50,
+        //         suggestedMax: 100
+        //     }
+        // },
+        
+        // maintainAspectRatio: true,
+
         responsive: true,
         plugins: {
             legend: {
@@ -50,5 +64,6 @@ export const DoughnutChart: React.FC<Props> = ({ data, title }) => {
         },
     };
 
+    // height={300} width={300}
     return <Doughnut data={chartData} options={options} />;
 };
