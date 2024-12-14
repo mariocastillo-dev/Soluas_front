@@ -201,6 +201,5 @@ export function FilterSection({ title, options, type, value, onChange }: FilterS
       </div>
     );
   }
-
   return null;
 }

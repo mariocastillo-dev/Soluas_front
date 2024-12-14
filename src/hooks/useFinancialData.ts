@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { financialData } from '../data/financialData';
 // import type { Filters } from '../types/financialData';
-import type { FinancialData, Filters } from '../types/financialData';
+import type { Filters } from '../types/financialData';
 
 export function useFinancialData(filters: Filters) {
     const filteredData = useMemo(() => {

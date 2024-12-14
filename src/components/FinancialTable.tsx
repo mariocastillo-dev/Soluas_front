@@ -5,7 +5,7 @@ import { Pagination } from './Pagination';
 import { useFinancialData } from '../hooks/useFinancialData';
 import type { Filters } from '../types/financialData';
 
-const ITEMS_PER_PAGE = 4;
+const ITEMS_PER_PAGE = 3;
 
 interface FinancialTableProps {
   filters: Filters;

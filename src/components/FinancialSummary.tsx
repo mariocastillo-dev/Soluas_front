@@ -13,12 +13,12 @@ export function FinancialSummary({ filters }: FinancialSummaryProps) {
   return (
     <>
       <SummaryCard
-        title="Ganancias Totales"
+        title="Presupuesto Total"
         value={formatCurrency(totals.budget)}
         icon="budget"
       />
       <SummaryCard
-        title="Costos Totales"
+        title="Gasto Total"
         value={formatCurrency(totals.spent)}
         icon="spent"
       />
