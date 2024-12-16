@@ -1,10 +1,6 @@
-// import { Building2, Filter, LogOut } from 'lucide-react';
-// import { Filter, LogOut } from 'lucide-react';
 import { LogOut } from 'lucide-react';
 import { FilterSection } from './FilterSection';
-// import { UserProfile } from "./Sidebar/UserProfile";
 import type { Filters } from '../types/financialData';
-
 
 interface SidebarProps {
     filters: Filters;

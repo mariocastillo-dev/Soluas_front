@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { TableHeader } from './TableHeader';
 import { TableRow } from './TableRow';
-import { Pagination } from './Pagination';
-import { useFinancialData } from '../hooks/useFinancialData';
-import type { Filters } from '../types/financialData';
+import { Pagination } from '../Pagination';
+import { useFinancialData } from '../../hooks/useFinancialData';
+import type { Filters } from '../../types/financialData';
 
 const ITEMS_PER_PAGE = 3;
 

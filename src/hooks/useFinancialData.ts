@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { financialData } from '../data/financialData';
+import { financialData } from '../data/dashboardFinancialData';
 // import type { Filters } from '../types/financialData';
 import type { Filters } from '../types/financialData';
 

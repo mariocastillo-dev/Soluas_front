@@ -1,5 +1,5 @@
-import type { FinancialData } from '../types/financialData';
-import { formatCurrency, formatPercentage } from '../utils/formatters';
+import type { FinancialData } from '../../types/financialData';
+import { formatCurrency, formatPercentage } from '../../utils/formatters';
 
 interface TableRowProps {
   data: FinancialData;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TableData } from '../types/tableTypes';
+import { TableData } from '../../types/tableTypes';
 
 interface Props {
   data: TableData[];

@@ -1,7 +1,7 @@
 import { SummaryCard } from './SummaryCard';
-import { useFinancialData } from '../hooks/useFinancialData';
-import { formatCurrency, formatPercentage } from '../utils/formatters';
-import type { Filters } from '../types/financialData';
+import { useFinancialData } from '../../hooks/useFinancialData';
+import { formatCurrency, formatPercentage } from '../../utils/formatters';
+import type { Filters } from '../../types/financialData';
 
 interface FinancialSummaryProps {
   filters: Filters;
