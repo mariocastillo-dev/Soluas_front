@@ -50,8 +50,10 @@ export default tseslint.config({
 ```
 
 # Reto Soluas | Aplicativo SoluDash
+===================================================================================================
 
 ## Problemática
+----------------------------------------------------------------------------------------------------
 
 Actualmente, la empresa Soluas enfrenta dificultades en la presentación mensual del informe de los
 KPI’s del contrato con la Secretaría de Hacienda del municipio de Itagüí, ya que este informe se
@@ -64,18 +66,29 @@ el cliente, optimizando la comunicación y el seguimiento de los indicadores de 
 contrato.
 
 ## Alcance actual
+-----------------------------------------------------------------------------------------------------
 
-Se creará un dashboard para consulta, actualización y generación de informes de los datos requeridos por el cliente, al cual se podrá acceder por medio de login en el cual se implementará controles de seguridad JWT. Además, una base de datos relacional para almacenamiento y mejor estructuración de los datos, el backend en python, y las respectivas API’s para interacción del dashboard.
+Se creará un dashboard para consulta, actualización y generación de informes de los datos requeridos 
+por el cliente, al cual se podrá acceder por medio de login en el cual se implementará controles de 
+seguridad JWT. Además, una base de datos relacional para almacenamiento y mejor estructuración de los 
+datos, el backend en python, y las respectivas API’s para interacción del dashboard.
 
 ## Stack tecnológico del Frontend
+-----------------------------------------------------------------------------------------------------
 ### Tecnologías y herramientas
 
 - [Vite](https://vite.dev/): herramienta de compilación para el desarrollo ágil y eficiente de proyectos web.
-- [TypeScript](https://www.typescriptlang.org/): lenguaje de programación de tipado estático, basado en JavaScript y creado por Microsoft.
-- [ReactJS](https://react.dev/): librería de JavaScript de código abierto, utilizada para crear interfaces de usuario para 
+- [TypeScript](https://www.typescriptlang.org/): lenguaje de programación de tipado estático, basado 
+              en JavaScript y creado por Microsoft.
+- [ReactJS](https://react.dev/): librería de JavaScript de código abierto, utilizada para crear interfaces
+           de usuario para 
 aplicaciones web y móviles, desarrollada por Facebook.
-- [Tailwind CSS](https://tailwindcss.com/docs/guides/vite): marco de trabajo de CSS (Hojas de Estilo en Cascada) que permite diseñar páginas web con clases predefinidas. Tailwind CSS es altamente personalizable y proporciona un conjunto de clases de utilidad para construir interfaces de usuario. 
-- [ChartJS](https://www.chartjs.org/): librería gratuita de JavaScript que permite crear gráficos interactivos y visualizaciones de datos para aplicaciones web. En SoluDash la implementamos en para crear los gráficos del dashboard.
+- [Tailwind CSS](https://tailwindcss.com/docs/guides/vite): marco de trabajo de CSS (Hojas de Estilo en 
+                Cascada) que permite diseñar páginas web con clases predefinidas. Tailwind CSS es altamente 
+                personalizable y proporciona un conjunto de clases de utilidad para construir interfaces 
+                de usuario. 
+- [ChartJS](https://www.chartjs.org/): librería gratuita de JavaScript que permite crear gráficos 
+           interactivos y visualizaciones de datos para aplicaciones web. En SoluDash la implementamos en para crear los gráficos del dashboard.
 - [Lucide](https://lucide.dev/guide/packages/lucide-react): biblioteca para la implementación de íconos en aplicaciones de React.
 
 
@@ -83,12 +96,12 @@ aplicaciones web y móviles, desarrollada por Facebook.
 
 Primero, asegúrese de tener instalado en su máquina:
 
-- [NodeJS](): Versión 16 o superior. 
+- [NodeJS](https://nodejs.org/en/): Versión 16 o superior. 
 Para verificar si tiene instalada alguna versión de Node en su computador, vaya a la terminal y escriba el siguiente comando:
 node --version
 En caso de que no le aparezca algo similar a esto: v20.11.0 deberá instalar la versión LTS de Node (recomendada) desde el sitio oficial.
-- [npm]()
-- [Git]()
+- [npm](https://www.npmjs.com/): Gestor de paquetes de Node.
+- [Git](https://git-scm.com/): Herramienta de control de versiones.
 
 ## Instalación y Configuración
 
@@ -103,19 +116,26 @@ A continuación, se describen los pasos a seguir para configurar y ejecutar el p
 
 2. Clonar éste repositorio:
 
-```git clone https://github.com/mariocastillo-dev/Soluas_front.git```
+```bash
+git clone https://github.com/mariocastillo-dev/Soluas_front.git
+```
 
 3. Navegar al directorio del proyecto:
 
-```Soluas_front/```
+```bash
+Soluas_front/
+```
 
 4. Instalar las dependencias:
+
 ```npm i```
 
 5. Iniciar el servidor en el ambiente de desarrollo:
+
 ```npm run dev```
 
 6. Abrir el navegador y acceder a la siguiente URL:
+
 ```http://localhost:5173/```
 
 
