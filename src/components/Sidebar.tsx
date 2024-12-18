@@ -117,7 +117,7 @@ export function Sidebar({ filters, onFiltersChange }: SidebarProps) {
             {/* Logout Button */}
             <button
                 onClick={handleLogout}
-                className="mt-8 w-full flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-sky-500 to-cyan-600 rounded-lg hover:from-sky-600 hover:to-sky-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+                className="mt-8 w-full flex items-center justify-center gap-2 px-4 py-2 text-lg font-medium text-white bg-gradient-to-r from-sky-500 to-cyan-600 rounded-lg hover:from-sky-600 hover:to-sky-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
             >
                 <LogOut className="w-4 h-4" />
                 Cerrar Sesión

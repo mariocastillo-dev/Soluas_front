@@ -3,7 +3,7 @@
 // UseContext para guardar todo el estado y las funciones que vamos a necesitar
 // en el desarrollo de nuestra aplicación
 
-import { useContext, createContext, useState, useEffect } from "react";
+import { useContext, createContext, useState } from "react";
 
 // Creamos una interface para que TypeScript no nos saque error por el tipado
 interface AuthProviderProps {
